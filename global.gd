@@ -36,7 +36,7 @@ func _ready():
 	var spliter = "este,ac,ef,12,34".split(",")
 	for i in spliter.size():
 		print(spliter[i])
-		print("ready")
+		print("ready 1,2,3...")
 
 
 func load():
