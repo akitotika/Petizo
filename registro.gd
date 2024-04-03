@@ -11,7 +11,7 @@ func _ready():
 	var mas = 8
 	for n in mas:
 		lee()
-		print("test me")
+		print("test me on github")
 	
 
 
