@@ -1,6 +1,6 @@
 extends Node
 
-var patente = ["","","","","","",""]
+var patente = ["","","","","","","",""]
 
 	
 func _ready():
