@@ -22,6 +22,7 @@ func _unhandled_key_input(event):
 		var hoy = str(nueva_fecha["day"])+ "/" + str(nueva_fecha["month"]) + "/" + str(nueva_fecha["year"]) 
 		Global.patente[6] = hoy
 		Global.patente[7] = 0
+		Global.patente[8] = true
 		Global.save_me()
 		get_tree().change_scene_to_file("res://escene/registro.tscn")
 		
@@ -33,7 +34,7 @@ func limpia():
 	get_node("CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer/Label1").text = ""
 	get_node("CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer/Label2").text = ""
 	get_node("CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer/Label3").text = ""
-	Global.patente = ["","","","","","","",""]
+	Global.patente = ["","","","","","","","",""]
 	mostrar1 = ""
 	mostrar2 = ""
 	mostrar3 = ""

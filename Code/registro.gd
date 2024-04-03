@@ -4,14 +4,19 @@ extends Control
 
 
 func _ready():
-	var mas = 4
-	for n in mas:
-		lee()
+	Global.load_me()
+	for n in Global.db_largo:
+		lee(n)
 		
 	
 
 
-func lee():
-	var pat = P.instantiate()
-	$CanvasLayer/Panel/ScrollContainer/VBoxContainer.add_child(pat)
+func lee(n):
 
+	var pat = P.instantiate()
+	pat.Label1 = 8
+	pat.Label2 = 8
+	pat.Label3 = 8
+	$CanvasLayer/Panel/ScrollContainer/VBoxContainer.add_child(pat)
+	
+	

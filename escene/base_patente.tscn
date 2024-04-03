@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cgkrqyk076amy" path="res://img/patente.jpg" id="1_5srgm"]
 [ext_resource type="FontFile" uid="uid://dfi00075ob0n7" path="res://font/Helvetica.ttf" id="2_7o44b"]
 
-[node name="PanelContainer" type="PanelContainer"]
+[node name="Patente" type="PanelContainer" groups=["Patentes"]]
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 90.3758
@@ -31,12 +31,13 @@ theme_override_constants/margin_top = 7
 theme_override_constants/margin_right = 7
 theme_override_constants/margin_bottom = 7
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+[node name="Letras" type="HBoxContainer" parent="MarginContainer/MarginContainer" groups=["Letras"]]
 layout_mode = 2
 theme_override_constants/separation = 16
 alignment = 1
 
-[node name="Label1" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+[node name="Label1" type="Label" parent="MarginContainer/MarginContainer/Letras"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -47,7 +48,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/Letras"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7o44b")
@@ -57,7 +59,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="Label3" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="MarginContainer/MarginContainer/Letras"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7o44b")
