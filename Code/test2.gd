@@ -14,5 +14,5 @@ func _on_texture_button_button_up():
 	Global.Patente1 = P1
 	Global.Patente2 = P2
 	Global.Patente3 = P3
-	get_tree().change_scene_to_file("res://tem_res.tscn")
+	get_tree().change_scene_to_file("res://escene/detalle.tscn")
 

@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="lista"
-run/main_scene="res://registro.tscn"
+run/main_scene="res://escene/Ingreso.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://img/icon.svg"
 
 [autoload]
 
-Global="*res://global.gd"
+Global="*res://Code/global.gd"
 
 [display]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://oirdyfd6cm0f"]
 
-[ext_resource type="Script" path="res://registro.gd" id="1_7wag6"]
+[ext_resource type="Script" path="res://Code/registro.gd" id="1_5hqm6"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_7wag6")
+script = ExtResource("1_5hqm6")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true

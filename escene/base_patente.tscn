@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://xbk6lej06qp7"]
 
-[ext_resource type="Script" path="res://test2.gd" id="1_0rcte"]
+[ext_resource type="Script" path="res://Code/test2.gd" id="1_0rcte"]
 [ext_resource type="Texture2D" uid="uid://cgkrqyk076amy" path="res://img/patente.jpg" id="1_5srgm"]
 [ext_resource type="FontFile" uid="uid://dfi00075ob0n7" path="res://font/Helvetica.ttf" id="2_7o44b"]
 

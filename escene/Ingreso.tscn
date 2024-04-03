@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://die2ajf1tdotf"]
+
+[ext_resource type="Script" path="res://Ingreso.gd" id="1_m4qab"]
+[ext_resource type="Texture2D" uid="uid://cgkrqyk076amy" path="res://img/patente.jpg" id="1_yrhld"]
+[ext_resource type="FontFile" uid="uid://dfi00075ob0n7" path="res://font/Helvetica.ttf" id="2_do021"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_m4qab")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 260.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 7
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 7
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_yrhld")
+expand_mode = 4
+stretch_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -71.0
+offset_right = 71.0
+offset_bottom = 36.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 29
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="Label1" type="Label" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_do021")
+theme_override_font_sizes/font_size = 41
+text = "AB"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_do021")
+theme_override_font_sizes/font_size = 41
+text = "CD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_do021")
+theme_override_font_sizes/font_size = 41
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
