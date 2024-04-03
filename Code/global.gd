@@ -1,7 +1,7 @@
 extends Node
 
 var patente = ["","","","","","","",""]
-
+var saved_data = {}
 	
 func _ready():
 	pass
@@ -21,12 +21,11 @@ func load_me():
 	
 func save_me():
 	var file = FileAccess.open("user://save_data.json",FileAccess.WRITE)
-	var saved_data = {}
 	saved_data["data"]= patente
 	var json = JSON.stringify(saved_data)
 	file.store_string(json)
 	file.close()
-	load_me()
+	
 	
 	
 

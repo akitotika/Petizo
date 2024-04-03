@@ -4,7 +4,7 @@ extends Control
 
 
 func _ready():
-	var mas = 8
+	var mas = 4
 	for n in mas:
 		lee()
 		

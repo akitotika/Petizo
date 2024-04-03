@@ -19,11 +19,9 @@ func _unhandled_key_input(event):
 		captura3(event)
 	else:if event.is_pressed() and event.keycode == KEY_ENTER:
 		var nueva_fecha = Time.get_datetime_dict_from_system()
-		print(nueva_fecha)
 		var hoy = str(nueva_fecha["day"])+ "/" + str(nueva_fecha["month"]) + "/" + str(nueva_fecha["year"]) 
 		Global.patente[6] = hoy
 		Global.patente[7] = 0
-		print(hoy)
 		Global.save_me()
 		get_tree().change_scene_to_file("res://escene/registro.tscn")
 		
