@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://drnurcea71g7r"]
+
+[node name="Patente" type="Panel"]
+
+[node name="P1" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="P2" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="P3" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
