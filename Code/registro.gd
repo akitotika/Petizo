@@ -5,18 +5,16 @@ extends Control
 
 func _ready():
 	Global.load_me()
+	print (Global.db_largo)
 	for n in Global.db_largo:
-		lee(n)
+		Global.D1 = str(Global.info[n][0]) + str(Global.info[n][1])
+		Global.D2 = str(Global.info[n][2]) + str(Global.info[n][3])
+		Global.D3 = str(Global.info[n][4]) + str(Global.info[n][5])
 		
-	
+		var dat =P.instantiate()
+		$Panel/ScrollContainer/VBoxContainer.add_child(dat)
+		print("test")
+		
 
-
-func lee(n):
-
-	var pat = P.instantiate()
-	pat.Label1 = 8
-	pat.Label2 = 8
-	pat.Label3 = 8
-	$CanvasLayer/Panel/ScrollContainer/VBoxContainer.add_child(pat)
 	
-	
+ 
