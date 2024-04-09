@@ -11,6 +11,7 @@ var D3 = ""
 var fecha = ""
 var monto = ""
 var userfile = "user://save_data.json"
+
 func _ready():
 	#// read the data base
 	load_me()
