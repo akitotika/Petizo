@@ -9,7 +9,6 @@ func _ready():
 
 
 func _on_texture_button_button_up():
-	print("press....")
 	Global.D1 = %D1.text
 	Global.D2 = %D2.text
 	Global.D3 = %D3.text

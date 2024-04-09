@@ -24,7 +24,6 @@ func load_me():
 		var json = file.get_as_text()
 		var save_data = JSON.parse_string(json)
 		info = save_data
-		print(info)
 		db_largo = len(info)
 		file.close()
 	else:
