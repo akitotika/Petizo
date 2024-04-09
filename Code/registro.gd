@@ -11,6 +11,7 @@ func _ready():
 		Global.D3 = str(Global.info[n][4]) + str(Global.info[n][5])
 		Global.fecha=str(Global.info[n][6])
 		Global.monto = str(Global.info[n][7])
+		Global.time_stamp = str(Global.info[n][8])
 		var dat =P.instantiate()
 		$Panel/ScrollContainer/VBoxContainer.add_child(dat)
 		

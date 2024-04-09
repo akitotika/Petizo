@@ -94,6 +94,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
+[node name="time_stamp" type="Label" parent="MarginContainer/MarginContainer/Letras"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7o44b")
+theme_override_font_sizes/font_size = 39
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
 [node name="TextureButton" type="TextureButton" parent="MarginContainer"]
 layout_mode = 2
 stretch_mode = 0

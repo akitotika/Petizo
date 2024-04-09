@@ -18,11 +18,14 @@ func _unhandled_key_input(event):
 	else: if event.is_pressed() and count < 6 and event.keycode != KEY_ENTER:
 		captura3(event)
 	else:if event.is_pressed() and event.keycode == KEY_ENTER:
-		var nueva_fecha = Time.get_datetime_dict_from_system()
-		var hoy = str(nueva_fecha["day"])+ "/" + str(nueva_fecha["month"]) + "/" + str(nueva_fecha["year"]) 
-		Global.patente[6] = hoy
-		Global.patente[7] = 0
-		Global.patente[8] = true
+		var nueva_fecha = Time.get_date_string_from_system()
+		var time_stamp = Time.get_unix_time_from_system()
+		time_stamp = time_stamp * 1000
+		print(time_stamp)
+		
+		Global.patente[6] = nueva_fecha
+		Global.patente[7] = Global.monto_inicial
+		Global.patente[8] = time_stamp
 		Global.save_me()
 		get_tree().change_scene_to_file("res://escene/registro.tscn")
 		

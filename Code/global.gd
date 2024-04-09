@@ -10,8 +10,9 @@ var D2 = ""
 var D3 = ""
 var fecha = ""
 var monto = ""
+var time_stamp 
 var userfile = "user://save_data.json"
-
+var monto_inicial = 1000
 func _ready():
 	#// read the data base
 	load_me()
