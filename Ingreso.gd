@@ -63,3 +63,7 @@ func captura3 (event):
 	get_node("CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer/Label3").text = mostrar3
 	count = count + 1
 	
+
+
+func _on_button_2_button_up():
+	get_tree().change_scene_to_file("res://escene/registro.tscn")

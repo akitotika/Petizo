@@ -60,7 +60,8 @@ theme_override_constants/separation = 28
 
 [node name="Label1" type="Label" parent="CanvasLayer/Panel/VBoxContainer/MarginContainer/TextureRect/MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_do021")
 theme_override_font_sizes/font_size = 47
@@ -115,18 +116,21 @@ layout_mode = 2
 alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer"]
+layout_direction = 1
 layout_mode = 2
 size_flags_horizontal = 3
-text = "1"
+text = "🚗"
 icon_alignment = 1
 expand_icon = true
 
 [node name="Button2" type="Button" parent="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "2"
+text = "📝"
 
 [node name="Button3" type="Button" parent="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "3"
+text = "🐣"
+
+[connection signal="button_up" from="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]
