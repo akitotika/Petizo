@@ -12,10 +12,11 @@ func _ready():
 		Global.fecha=str(Global.info[n][6])
 		Global.monto = str(Global.info[n][7])
 		Global.time_stamp = str(Global.info[n][8])
+		Global.id = Global.info[n][9]
 		var dat =P.instantiate()
 		$Panel/ScrollContainer/VBoxContainer.add_child(dat)
 		
-		
 
-	
- 
+
+func _on_button_button_up():
+	get_tree().change_scene_to_file("res://escene/Ingreso.tscn")

@@ -69,6 +69,7 @@ alignment = 1
 [node name="Button" type="Button" parent="Panel2/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
 text = "🚗"
 icon_alignment = 1
 expand_icon = true
@@ -82,3 +83,5 @@ text = "📝"
 layout_mode = 2
 size_flags_horizontal = 3
 text = "🐣"
+
+[connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]

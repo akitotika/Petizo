@@ -26,6 +26,7 @@ func _unhandled_key_input(event):
 		Global.patente[6] = nueva_fecha
 		Global.patente[7] = Global.monto_inicial
 		Global.patente[8] = time_stamp
+		Global.patente[9] = str(Global.db_largo)
 		Global.save_me()
 		get_tree().change_scene_to_file("res://escene/registro.tscn")
 		

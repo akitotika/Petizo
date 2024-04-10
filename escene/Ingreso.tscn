@@ -126,6 +126,7 @@ expand_icon = true
 [node name="Button2" type="Button" parent="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
 text = "📝"
 
 [node name="Button3" type="Button" parent="CanvasLayer/Panel/Panel/MarginContainer/HBoxContainer"]

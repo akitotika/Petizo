@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bansqu4u6og5k"]
+[gd_scene load_steps=3 format=3 uid="uid://bansqu4u6og5k"]
 
 [ext_resource type="Script" path="res://Code/tem_res.gd" id="1_kphdq"]
+[ext_resource type="FontFile" uid="uid://dfi00075ob0n7" path="res://font/Helvetica.ttf" id="2_njoea"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,23 +14,57 @@ script = ExtResource("1_kphdq")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.887
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
 
 [node name="Fecha" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 text = "fecha"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Monto" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_njoea")
 text = "$10.000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="borrar" type="Button" parent="VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 60
+text = "🗑️"
+
+[node name="cobrar" type="Button" parent="VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 60
+text = "💲 "
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -70,6 +105,7 @@ expand_icon = true
 [node name="Button2" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
 text = "📝"
 
 [node name="Button3" type="Button" parent="Panel/MarginContainer/HBoxContainer"]
@@ -77,4 +113,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "🐣"
 
+[connection signal="button_up" from="VBoxContainer/Panel2/HBoxContainer/borrar" to="." method="_on_borrar_button_up"]
 [connection signal="button_up" from="Panel/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Panel/MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]

@@ -15,9 +15,9 @@ script = ExtResource("1_e6kqw")
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
 theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 5
+theme_override_constants/margin_top = 7
 theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 5
+theme_override_constants/margin_bottom = 7
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer"]
 layout_mode = 2
@@ -26,10 +26,10 @@ expand_mode = 5
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 7
-theme_override_constants/margin_top = 7
-theme_override_constants/margin_right = 7
-theme_override_constants/margin_bottom = 7
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
 
 [node name="Letras" type="HBoxContainer" parent="MarginContainer/MarginContainer" groups=["Letras"]]
 layout_mode = 2
@@ -39,7 +39,8 @@ alignment = 1
 [node name="D1" type="Label" parent="MarginContainer/MarginContainer/Letras"]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7o44b")
 theme_override_font_sizes/font_size = 39
@@ -51,6 +52,8 @@ uppercase = true
 [node name="D2" type="Label" parent="MarginContainer/MarginContainer/Letras"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7o44b")
 theme_override_font_sizes/font_size = 39
@@ -62,6 +65,8 @@ uppercase = true
 [node name="D3" type="Label" parent="MarginContainer/MarginContainer/Letras"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7o44b")
 theme_override_font_sizes/font_size = 39
@@ -95,6 +100,18 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="time_stamp" type="Label" parent="MarginContainer/MarginContainer/Letras"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7o44b")
+theme_override_font_sizes/font_size = 39
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="id" type="Label" parent="MarginContainer/MarginContainer/Letras"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
