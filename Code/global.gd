@@ -1,7 +1,6 @@
 extends Node
 
 var patente = ["","","","","","","","","",""]
-
 var db_ancho = 8
 var db_largo = 0
 var info =[]
@@ -16,10 +15,8 @@ var userfile = "user://save_data.json"
 var monto_inicial = 1000
 
 func _ready():
-	#// read the data base
+	
 	load_me()
-	
-	
 
 func load_me():
 	
@@ -29,7 +26,6 @@ func load_me():
 		var save_data = JSON.parse_string(json)
 		info = save_data
 		db_largo = len(info)
-		print(db_largo)
 		for i in db_largo:
 			info[i][9] = str(i)
 		file.close()
@@ -54,9 +50,4 @@ func update_me():
 	var file = FileAccess.open("user://save_data.json",FileAccess.WRITE)
 	var json = JSON.stringify(info)
 	file.store_string(json)
-	file.close
-	print(info)
-	
-
-
-	
+	file.close()

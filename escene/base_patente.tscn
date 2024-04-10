@@ -5,9 +5,10 @@
 [ext_resource type="FontFile" uid="uid://dfi00075ob0n7" path="res://font/Helvetica.ttf" id="2_7o44b"]
 
 [node name="dat" type="PanelContainer" groups=["Patentes"]]
-anchors_preset = 10
+anchors_preset = -1
 anchor_right = 1.0
-offset_bottom = 90.3758
+anchor_bottom = 0.146
+offset_bottom = -0.232224
 grow_horizontal = 2
 size_flags_horizontal = 3
 script = ExtResource("1_e6kqw")
