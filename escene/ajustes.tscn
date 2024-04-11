@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://oirdyfd6cm0f"]
+[gd_scene load_steps=2 format=3 uid="uid://tmdhtyi0hjpf"]
 
-[ext_resource type="Script" path="res://Code/registro.gd" id="1_5hqm6"]
+[ext_resource type="Script" path="res://Code/ajustes.gd" id="1_rf3hc"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_5hqm6")
+script = ExtResource("1_rf3hc")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -22,20 +22,11 @@ offset_bottom = -2.66406
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-horizontal_scroll_mode = 0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_constants/separation = 7
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Ajustes"
 
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 1
@@ -69,7 +60,6 @@ alignment = 1
 [node name="Button" type="Button" parent="Panel2/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
 text = "🚗"
 icon_alignment = 1
 expand_icon = true
@@ -82,7 +72,8 @@ text = "📝"
 [node name="Button3" type="Button" parent="Panel2/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
 text = "🐣"
 
 [connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]
-[connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button3" to="." method="_on_button_3_button_up"]
+[connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]

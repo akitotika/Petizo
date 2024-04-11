@@ -119,3 +119,4 @@ text = "🐣"
 [connection signal="button_up" from="VBoxContainer/Panel2/MarginContainer/HBoxContainer/borrar" to="." method="_on_borrar_button_up"]
 [connection signal="button_up" from="Panel/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Panel/MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]
+[connection signal="button_up" from="Panel/MarginContainer/HBoxContainer/Button3" to="." method="_on_button_3_button_up"]

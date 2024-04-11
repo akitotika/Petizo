@@ -28,3 +28,7 @@ func _on_borrar_button_up():
 	Global.info.remove_at(int(Global.id))
 	Global.update_me()
 	get_tree().change_scene_to_file("res://escene/registro.tscn")
+
+
+func _on_button_3_button_up():
+	get_tree().change_scene_to_file("res://escene/ajustes.tscn")
