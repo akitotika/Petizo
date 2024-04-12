@@ -15,6 +15,9 @@ func _ready():
 		Global.id = Global.info[n][9]
 		var dat =P.instantiate()
 		$Panel/ScrollContainer/VBoxContainer.add_child(dat)
+		print(Global.monto_inicial)
+		#if is on 
+		
 		
 
 
@@ -24,3 +27,11 @@ func _on_button_button_up():
 
 func _on_button_3_button_up():
 	get_tree().change_scene_to_file("res://escene/ajustes.tscn")
+
+
+func _on_text_edit_text_changed():
+	
+	$Panel/ScrollContainer/VBoxContainer.queue_free()
+	print(%busca.text)
+	_ready()
+	pass # Replace with function body.

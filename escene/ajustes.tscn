@@ -18,15 +18,52 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.893
-offset_bottom = -2.66406
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Panel"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.57
+theme_override_font_sizes/font_size = 35
 text = "Ajustes"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Monto a cobrar:"
+
+[node name="LineEdit" type="LineEdit" parent="Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+virtual_keyboard_type = 2
+
+[node name="Guardar" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+size_flags_stretch_ratio = 11.22
+text = "Guardar"
+
+[node name="juego" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Juego"
 
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 1
@@ -75,5 +112,6 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 text = "🐣"
 
+[connection signal="button_up" from="Panel/MarginContainer/VBoxContainer/Guardar" to="." method="_on_guardar_button_up"]
 [connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]
