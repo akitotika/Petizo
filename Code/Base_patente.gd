@@ -8,7 +8,8 @@ func _ready():
 	%Monto.text=Global.monto
 	%time_stamp.text=Global.time_stamp
 	%id.text=str(Global.id)
-
+	
+	
 func _on_texture_button_button_up():
 	Global.D1 = %D1.text
 	Global.D2 = %D2.text

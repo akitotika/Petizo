@@ -111,6 +111,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "🐣"
 
-[connection signal="text_changed" from="Panel3/MarginContainer/busca" to="." method="_on_text_edit_text_changed"]
+[connection signal="text_changed" from="Panel3/MarginContainer/busca" to="." method="_on_busca_text_changed"]
 [connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Panel2/MarginContainer/HBoxContainer/Button3" to="." method="_on_button_3_button_up"]
